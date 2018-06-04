@@ -1,0 +1,61 @@
+<div>
+    <form id="registrationFormStudent" class="registrationForm">
+        <table>
+            <tr><td>
+                <h2>Registracija</h2>
+            </td></tr>
+            <tr><td>
+                <input type="text" id="RegistrationName" placeholder="ime i prezime"
+                       onblur="HandleValidation.validirajImeiPrezime(this.value)">
+            </td></tr>
+            <tr><td>
+                <input type="text" id="RegistrationUsername" placeholder="korisničko ime">
+            </td></tr>
+            <tr><td>
+                <input type="text" id="RegistrationIndex" placeholder="broj indeksa"
+                       onblur="HandleValidation.validirajIndex(this.value)">
+            </td></tr>
+            <tr><td>
+                <input type="password" id="RegistrationPassword" placeholder="password"
+                       onblur="HandleValidation.validirajPassword(this.value)">
+            </td></tr>
+            <tr><td>
+                <input type="password" id="RegistrationConfirmPassword" placeholder="confirm password"
+                       onblur="HandleValidation.validirajPotvrdu(this.value, document.getElementById('RegistrationPassword').value)">
+            </td></tr>
+            <tr><td>
+                <input type="text" id="RegistrationBitBucketUrl" placeholder="bitbucket url"
+                       onblur="HandleValidation.validirajBitbucketURL(this.value)">
+            </td></tr>
+            <tr><td>
+                <input type="text" id="RegistrationBitBucketSSH" placeholder="bitbucket ssh"
+                       onblur="HandleValidation.validirajBitbucketSSH(this.value)">
+            </td></tr>
+            <tr><td>
+                <input type="text" id="RegistrationRepositoryName" placeholder="naziv repozitorija"
+                       onblur="HandleValidation.validirajNazivRepozitorija(null, this.value)">
+            </td></tr>
+            <tr><td>
+                <button type="button" id="RegisterButton" onclick="
+                
+                    registerStudent({
+                        korisnickoIme: RegistrationUsername.value,
+                        sifra: RegistrationPassword.value,
+                        rola: 3,
+                        imePrezime: RegistrationName.value,
+                        bitbucketUrl: RegistrationBitBucketUrl.value,
+                        bitbucketSsh: RegistrationBitBucketSSH.value,
+                        nazivRepozitorija: RegistrationRepositoryName.value
+                    });
+                
+            ">Registruj</button>
+            </td></tr>
+            <tr><td>
+                <button type="button" id="RegisterFormToggleButton">Registruj nastavnika</button>
+            </td></tr>
+            <tr><td>
+                <div id="errorMsg"></div>
+            </td></tr>
+        </table>
+    </form>
+</div>

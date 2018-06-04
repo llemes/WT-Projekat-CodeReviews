@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <script type="text/javascript" src="scripts/loadHandler.js"></script>
+    <script type="text/javascript" src="scripts/HandleValidation.js"></script>
+    <script type="text/javascript" src="scripts/poruke.js"></script>
+    <script type="text/javascript" src="scripts/unosSpiska.js"></script>
+    <script type="text/javascript" src="scripts/validacija.js"></script>
+    <script type="text/javascript" src="scripts/kreirajFajl.js"></script>
+    <script type="text/javascript" src="https://use.fontawesome.com/7962dc4d65.js"></script>
+    <script type="text/javascript" src="scripts/bitbucketApi.js"></script>
+    <script type="text/javascript" src="scripts/ThumbsUpAction.js"></script>
+    <script type="text/javascript" src="scripts/ThumbsDownAction.js"></script>
+    <script type="text/javascript" src="scripts/login.js"></script>
+    <script type="text/javascript" src="scripts/listaKorisnika.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="styles/common.css">
+    <title>WT Code reviews</title>
+</head>
+<body>
+
+    <!-- meni -->
+    <header>
+        <table id="menu">
+            <tr class="menuRow">
+                <td class="menuCell"><img src="res/logo.jpg" id="logo" alt="WT"></td>
+                <td class="menuCell">
+                    <a href="#" class="menuLink" id="loginLink" onclick="load('login')">Login</a>&nbsp;&nbsp;
+                    <a href="#" class="menuLink" id="statistikaLink" onclick="load('statistika')">Statistika</a>&nbsp;&nbsp;
+                    <a href="#" class="menuLink" id="komentariLink" onclick="load('unoskomentara')">Komentari</a>&nbsp;&nbsp;
+                    <a href="#" class="menuLink" id="unosLink" onclick="load('unos')">Unos</a>
+                    <a href="#" class="menuLink" id="nastavnikLink" onclick="load('nastavnik')">Nastavnik</a>
+                    <a href="#" class="menuLink" id="bitbucketLink" onclick="load('bitbucket')">Bitbucket</a>
+                    <a href="#" class="menuLink" id="korisniciLink" onclick="load('listaKorisnika')">Korisnici</a>
+                    <a href="https://wtprojekat17070.herokuapp.com/" class="menuLink" id="onlineLink">Online</a>
+                </td>
+            </tr>
+        </table>
+    </header>
+
+    <div id="pageContent"></div>
+
+</body>
+</html>

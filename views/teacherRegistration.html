@@ -1,0 +1,69 @@
+<div>
+    <form id="registrationFormNastavnik" class="registrationForm">
+        <table>
+            <tr><td>
+                <h2>Registracija</h2>
+            </td></tr>
+            <tr><td>
+                <input type="text" id="RegistrationName" placeholder="ime i prezime"
+                       onblur="HandleValidation.validirajImeiPrezime(this.value)">
+            </td></tr>
+            <tr><td>
+                <input type="text" id="RegistrationUsername" placeholder="korisničko ime">
+            </td></tr>
+            <tr><td>
+                <input type="password" id="RegistrationPassword" placeholder="password"
+                       onblur="HandleValidation.validirajPassword(this.value)">
+            </td></tr>
+            <tr><td>
+                <input type="password" id="RegistrationConfirmPassword" placeholder="confirm password"
+                       onblur="HandleValidation.validirajPotvrdu(this.value, RegistrationPassword.value)">
+            </td></tr>
+            <tr><td>
+                <input type="text" id="RegistrationEmail" placeholder="fakultetski email"
+                       onblur="HandleValidation.validirajFakultetski(this.value)">
+            </td></tr>
+            <tr><td>
+                <input type="number" id="RegistrationMaxGroupNumber" placeholder="maksimalan broj grupa"
+                       onblur="HandleValidation.validirajGrupu(this.value)">
+            </td></tr>
+            <tr><td>
+                <input type="text" id="RegistrationRegex" placeholder="regex za repozitorij">
+            </td></tr>
+            <tr><td>
+                <select type="text" id="RegistrationSemester">
+                    <option>Zimski semestar</option>
+                    <option>Ljetni semestar</option>
+                </select>
+            </td></tr>
+            <tr><td>
+                <input type="text" id="RegistrationAcademicYear" placeholder="akademska godina"
+                       onblur="HandleValidation.validirajAkGodinu(this.value)">
+            </td></tr>
+            <tr><td>
+                <button type="button" id="RegisterButton"  onclick="
+                
+                    registerTeacher({
+                        korisnickoIme: RegistrationUsername.value,
+                        sifra: RegistrationPassword.value,
+                        rola: 2,
+                        imePrezime: RegistrationName.value,
+                        fakultetskiMail: RegistrationEmail.value,
+                        maxBrojGrupa: RegistrationMaxGroupNumber.value,
+                        regexRepozitorij: RegistrationRegex.value,
+                        semestarRegistracije: RegistrationSemester.value,
+                        akademskaGodinaRegistracije: RegistrationAcademicYear.value,
+                        verified: false
+                    });
+                
+            ">Registruj</button>
+            </td></tr>
+            <tr><td>
+                <button type="button" id="RegisterFormToggleButton">Registruj studenta</button>
+            </td></tr>
+            <tr><td>
+                <div id="errorMsg"></div>
+            </td></tr>
+        </table>
+    </form>
+</div>

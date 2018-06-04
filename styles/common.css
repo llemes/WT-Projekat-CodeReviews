@@ -1,0 +1,109 @@
+@import url(http://fonts.googleapis.com/css?family=Quicksand);
+
+body {
+    font-family: Quicksand, serif;
+    background-color: #f2f2f2;
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border: none;
+    text-align: center;
+    display: inline-block;
+    font-size: medium;
+    padding: 1% 3%;
+    margin-top: 2%;
+    border-radius: 5px;
+    width: 90%;
+}
+
+button:not(.buttonIkona):hover {
+    background-color: #676767;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+input[type="text"], input[type="password"], input[type="number"], textarea, select {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px;
+    resize: none;
+    box-sizing: border-box;
+    width: 90%;
+}
+
+.menuCell {
+    padding-left: 1%;
+    width: 50%;
+}
+
+.menuLink {
+    text-decoration: none;
+    color: white
+}
+
+.menuLink:hover {
+    font-weight: bold;
+    color: #9d9d9d;
+}
+
+#menu {
+    height: 10%;
+    width: 100%;
+    background-color: black;
+    color: white;
+    z-index: 10000;
+}
+
+#logo {
+    height: auto;
+}
+
+#loginLink {
+    display: inline-block;
+}
+
+#statistikaLink {
+    display: inline-block;
+}
+
+#komentariLink {
+    display: inline-block;
+}
+
+#unosLink {
+    display: inline-block;
+}
+
+/*
+        SMALL SCREEN
+*/
+
+@media screen and (max-width: 700px) {
+
+    #logo {
+        width: 20%;
+    }
+
+}
+
+/*
+        BIG SCREEN
+*/
+
+@media screen and (min-width: 700px) {
+
+    #logo {
+        width: 6%;
+    }
+
+}

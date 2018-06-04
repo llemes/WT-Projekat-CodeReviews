@@ -1,0 +1,43 @@
+<div id="forma">
+
+    <input type="text" id="key" placeholder="key">
+    <input type="text" id="secret" placeholder="secret">
+    <input type="text" id="nazivRepozitorija" placeholder="naziv repozitorija">
+    <input type="text" id="nazivBrancha" placeholder="naziv brancha">
+    <input type="number" id="trenutnaGodina">
+    <button type="button" onclick="
+        var token;
+        BitBucketApi.dohvatiAccessToken(key.value, secret.value, function (status, poruka) {
+            if(status === -1) {
+                output.innerText = poruka;
+            }
+            else {
+                token = poruka;
+            }
+        });
+
+        var listaRepozitorija = [];
+        BitBucketApi.dohvatiRepozitorije(token, trenutnaGodina.value, nazivRepozitorija.value, nazivBrancha.value, function (status, poruka) {
+
+            if(!status) {
+                listaRepozitorija = poruka;
+            }
+            else {
+                // neka greška haman
+            }
+
+        });
+
+        KreirajFajl.kreirajListu(trenutnaGodina.value, listaRepozitorija, function(status, poruka) {
+
+            output.innerText = status + ' - ' + poruka;
+
+        })
+
+    ">Generiši listu</button>
+
+</div>
+
+<div id="output">
+
+</div>

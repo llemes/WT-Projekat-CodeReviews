@@ -1,0 +1,6 @@
+B, C, D, A, E
+A: ima samo nekakav bitbucket-pipelines.yml, nema spirale
+B: Odlično urađena spirala, sve radi kako je predviđeno. Zamjerku imam na nekorištenje sesija, pošto se nakon reloada stranice korisnik izloguje. Također ne vidim stavku menija koja se odnosi na online verziju, tako da pretpostavljam da deploy nije urađen. Ali sve u svemu, jako lijepo rješenje, sa urednim korištenjem ruta i čitljivim kodom.  
+C: Nisam uspjela pokrenuti stranicu, zbog nekompatibilnosti nekih modula. Ali koliko vidim iz koda, spirala je korektno urađena, mada bih preporučila da se koristi više fajlova za backend (obzirom da je sve natrpano u jedan, bilo bi dosta preglednije). Također, dobra praksa je razdvojiti ostale fajlove na stranici ili po logici ili po filetype u foldere. Ovo dovodi do toga da se projekat daleko lakše skalira.
+D: ZAŠTO JE SPIRALA RAROVANA???? Pri pokušaju pokretanja postoji sintaksna greška u index.js na liniji 315. No sudeći prema kodu, spirala je korektno urađena. Čini mi se da nedostaje provjera sesija na post zahtjevima (zbog protekcije od zahtjeva poslanih kroz postman).
+E: folder je prazan

@@ -1,0 +1,14 @@
+ ###### 
+tekst komentara za projekat A, lijepo struktuiran i komentarisan kod i solidan dizajn, common.css nije validan,login.html nije validan
+
+ ###### 
+Na stranici statistika jedan layout je u potpunosti izbahen (WT code reviews). Ostatak stranice je u skladu sa zadatkom i ohekivano se ponaa prilikom smanjenja irine.Bagovi nisu pronapeni. Kod je razumljiv i hitljiv. Bilo je teko razumjeti na koji nahin je common.css povezana sa stranicama jer nahin na koji je ta veza urapena ne odgovara praksi koja je rapena na vjebama.HTML nije validiran. Tako su vef na stranici login pronapene greke. Datoteka common.css je uljuhena. Ponavljanja nema. Prilikom promjene pretraivaha, stranica se ohekivano ponaa.Sve pohvale za dizajn!
+ ###### 
+Spirala D je na trecoj poziciji kada se sve uzme u obzir. Svidja mi se to kako je jednostavnog, a uz to veoma dobrog izgleda. Mislim da bi se korisnici web stranice lako snasli pri koristenju iste. Zadaci koji su bili u postavci su uradjeni, uz postovanje zadanog izgleda "statistike". Sto se tice HTML dokumenta on ne sadrzi CSS elemente sto je dobro. Razlog koji je ovu stranicu postavio na trecu poziciju jeste testiranje pomocu DevTools u browseru Chrome. Kada testiramo responsive layout na taj nacin stranica ne reaguje.( Nije velika zamjerka samo fali u html dokumentima <meta name="viewport" content="width=device-width, initial-scale=1.0">) Mislim da se CSS kod mogao odvojiti u odvojen folder, zbog lakse preglednosti. Sto se tice direktno koda, kod je citljiv i moze se razumjeti. U ovoj spirali nisu validni svi html dokumenti, javljaju se errori poput "Error: Attribute type not allowed on element select at this point."
+
+ ###### 
+Spirala u potpunosti zavrsena, ispunjava sve funkcionalnosti. Sve pohvale za dizajn, vrlo jednostavno i lijepo iskombinovano. Kod i u .html i u .css fajlovima razumljiv i lahko se snaci unutar istog. Jedina stvar koja je problem jeste login.html, koji ne prolazi validator("Attribute type not allowed on element select at this point." i "Attribute placeholder not allowed on element select at this point.").
+
+ ###### 
+tekst komentara za projekat B, Boje predobro izabrane i logo, zadatak dovršen upotpunosti, nema horizontalni scrollbar, font takoder odlican, nema buggova cak na ekstremno malim dimenzijama (zoom -) izgleda fino samo su malo slova sitnica ali nije vazno, izgled prati dimenzije browsera i html i css su citko napisani i razumljivi, kako sam uspio primjenitit nema ponavljanja koda. Jedina ozbiljna mana koju sam uspio pronaci je da login html datoteka nije validiran i jedna mala zamjerka je to da se naslov WT Code Reviews nalazi u meniu na Statistici.
+

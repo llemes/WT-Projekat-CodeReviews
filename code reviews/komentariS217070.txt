@@ -1,0 +1,13 @@
+################# 
+Spirala 2 je odlicino uradjena, i jako je tesko bilo pronaci neku zamjerku za ovaj rad. Jedina sitnica je ta sto se validacija ne poziva prilikom gubljenja fokusa na polje. Sve je uradjeno korektno. Bravo!
+
+################# 
+1. prvi zadatak sa validacijama je uradjen u potpunosti, drugi zadatak je takodjer ispunjen, kao sto je trazeno u trecem zadatku postoji modul poruke.js, u cetvrtom zadatku iako postoji kod za akciju mijenjanja redova i koristena ikonica iz fontawesome, to se ne moze uraditi (ne znam da li to spada u neuradjen ili neispravnost) 2. sto se tice validacija (gledala sam po kodu, jer svakako nema ispisa poruka) uredu su, neispravno je nepojavljivanje poruka u zavisnosti od unosa iako kod za to postoji, nije se ok povezalo sve, te nefunkcioisanje zamjene redova iako je kod .js za to radjen 3. citljivost koda je uredu, uredan je i profesionalan, pri snalazenju dosta pomaze odvajanje po folderima za css, js i html 4. validacije HTML i CSS ispunjene
+################# 
+Funkcije u validacija.js su korektno implementirane, kao i u poruke.js, kod je jako citljiv. Efikasno i korektno rjesenje thumbsUp i thumbsDown akcije u tabeli na unoskomentara. Medjutim ne ispisuju se poruke greske, nisu dobro povezane funkcije validacije i poruka. Akcija promjene formi je mogla biti i elegantnija, ali i ovaj nacin radi.
+
+################# 
+Vecina funkcionalnosti radi kako je i trazeno. Glasanje uradjeno elegantno, jasno, u malo linija. Kod validacije maxGrupe koristeno < umjesto <=. Na student formi fali akademska godina i broj grupe. Nacin izmjene formi, injectovanjem iz javascripta mi se cini kao los i nepregledan nacin. Kada se pocne kucati u polja forme, forma se prosiri. Kada se popravi polje sa imenom, poruke ostaju.
+
+#################
+pohvalio bi način na koji je odrađena smjena forme nastavnik-student i način na koji su fajlovi smješteni po datotekama,regex za ime i prezime nije u potpunosti tačan (kod korištenja apostrofa),

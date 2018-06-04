@@ -1,0 +1,98 @@
+<link rel="stylesheet" type="text/css" href="styles/unoskomentara.css">
+
+<div>
+
+    <div id="inputi">
+        <div class="inputiRow">
+            <label for="brojSpirale">Broj spirale:</label>
+            <input type="number" id="brojSpirale" min="1" max="4">
+        </div>
+        <div class="inputiRow">
+            <label for="brojIndeksa">Broj indeksa:</label>
+            <input type="text" id="brojIndeksa">
+        </div>
+    </div>
+
+    <table id="studentiTabela">
+        <tr id="headerTabele">
+            <th>Šifra</th>
+            <th>Komentar</th>
+            <th>Glasaj</th>
+        </tr>
+        <tr id="redA">
+            <td>A</td>
+            <td><input type="text" id="komentar1"></td>
+            <td>
+                <button type="button" class="buttonIkona" onclick="ThumbsUpAction(this)"><i class="fa fa-thumbs-o-up fa-2x" aria-hidden="true"></i></button>
+                <button type="button" class="buttonIkona" onclick="ThumbsDownAction(this)"><i class="fa fa-thumbs-o-down fa-2x" aria-hidden="true"></i></button>
+            </td>
+        </tr>
+        <tr  id="redB">
+            <td>B</td>
+            <td><input type="text" id="komentar2"></td>
+            <td>
+                <button type="button" class="buttonIkona" onclick="ThumbsUpAction(this)"><i class="fa fa-thumbs-o-up fa-2x" aria-hidden="true"></i></button>
+                <button type="button" class="buttonIkona" onclick="ThumbsDownAction(this)"><i class="fa fa-thumbs-o-down fa-2x" aria-hidden="true"></i></button>
+            </td>
+        </tr>
+        <tr  id="redC">
+            <td>C</td>
+            <td><input type="text" id="komentar3"></td>
+            <td>
+                <button type="button" class="buttonIkona" onclick="ThumbsUpAction(this)"><i class="fa fa-thumbs-o-up fa-2x" aria-hidden="true"></i></button>
+                <button type="button" class="buttonIkona" onclick="ThumbsDownAction(this)"><i class="fa fa-thumbs-o-down fa-2x" aria-hidden="true"></i></button>
+            </td>
+        </tr>
+        <tr  id="redD">
+            <td>D</td>
+            <td><input type="text" id="komentar4"></td>
+            <td>
+                <button type="button" class="buttonIkona" onclick="ThumbsUpAction(this)"><i class="fa fa-thumbs-o-up fa-2x" aria-hidden="true"></i></button>
+                <button type="button" class="buttonIkona" onclick="ThumbsDownAction(this)"><i class="fa fa-thumbs-o-down fa-2x" aria-hidden="true"></i></button>
+            </td>
+        </tr>
+        <tr  id="redE">
+            <td>E</td>
+            <td><input type="text" id="komentar5"></td>
+            <td>
+                <button type="button" class="buttonIkona" onclick="ThumbsUpAction(this)"><i class="fa fa-thumbs-o-up fa-2x" aria-hidden="true"></i></button>
+                <button type="button" class="buttonIkona" onclick="ThumbsDownAction(this)"><i class="fa fa-thumbs-o-down fa-2x" aria-hidden="true"></i></button>
+            </td>
+        </tr>
+    </table>
+
+    <button id="kreirajKomentarButton" type="button" onclick="
+        var arr = [
+            {
+                sifra_studenta: 'A',
+                tekst: komentar1.value,
+                ocjena: redA.rowIndex + 1
+            },
+            {
+                sifra_studenta: 'B',
+                tekst: komentar2.value,
+                ocjena: redB.rowIndex + 1
+            },
+            {
+                sifra_studenta: 'C',
+                tekst: komentar3.value,
+                ocjena: redC.rowIndex + 1
+            },
+            {
+                sifra_studenta: 'D',
+                tekst: komentar4.value,
+                ocjena: redD.rowIndex + 1
+            },
+            {
+                sifra_studenta: 'E',
+                tekst: komentar5.value,
+                ocjena: redE.rowIndex + 1
+            }
+        ];
+        KreirajFajl.kreirajKomentar(brojSpirale.value, brojIndeksa.value, arr, function(status, poruka) {
+
+            console.log({status: status, poruka: poruka});
+
+        });">Kreiraj komentar</button>
+
+</div>

@@ -1,0 +1,180 @@
+@import "common.css";
+
+button {
+    width: auto;
+}
+
+textarea {
+    padding: 0.2%;
+}
+
+/*
+        --- HEADER ---
+*/
+
+#naslov {
+    text-transform: uppercase;
+    position: absolute;
+    top: 40%;
+}
+
+#containerNaslov {
+    width: 95%;
+    position: absolute;
+}
+
+#statistikeStudenta {
+    margin-left: 8%;
+}
+
+#imePrezime {
+    text-align: right;
+}
+
+/*
+        --- MAIN CONTENT ---
+*/
+
+#sidebar {
+    border: 1px solid black;
+    border-radius: 6px;
+    position: absolute;
+    left:5%;
+}
+
+.sidebarElement {
+    margin-left: 5%;
+}
+
+#tabela {
+    position:absolute;
+}
+
+#tabelaContent {
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#tabelaContent tr:first-child, #tabelaContent td:nth-child(1) {
+    background-color: #c8c8c8;
+}
+
+.tabelaContentElement {
+    padding: 1%;
+    border: 1px solid black;
+}
+
+/*
+        --- COMMENTS ---
+*/
+
+#containerKomentari {
+    width:70%;
+    position: absolute;
+}
+
+/*
+        --- BUTTONS ---
+*/
+
+#navButtons {
+    position: absolute;
+    width: 50%;
+}
+
+.navigationButton {
+    background-color: #9d9d9d;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: none;
+}
+
+#currentPageButton {
+    background-color: black;
+}
+
+/*
+        SMALL SCREEN
+*/
+
+@media screen and (max-width: 700px) {
+
+    #containerNaslov {
+        top: 17.5%;
+    }
+
+    #naslov {
+        right: 35%;
+    }
+
+    #sidebar {
+        width: 80%;
+        top: 35%;
+    }
+
+    #tabela {
+        top: 80%;
+        left: 5%;
+        width: 80%;
+    }
+
+    #containerKomentari {
+        top: 150%;
+        left: 10%;
+        width: 80%;
+    }
+
+    .komentari {
+        width: 100%;
+        height: 20%;
+    }
+
+    #navButtons {
+        left: 30%;
+        width: 60%;
+    }
+}
+
+/*
+        BIG SCREEN
+*/
+
+@media screen and (min-width: 700px) {
+
+    #containerNaslov {
+        top: 10%;
+    }
+
+    #naslov {
+        right: 50%;
+    }
+
+    #sidebar {
+        width: 30%;
+        top: 20%;
+    }
+
+    #tabela {
+        top: 20%;
+        right: 5%;
+        width: 55%;
+    }
+
+    #containerKomentari {
+        top: 50%;
+        left: 5%;
+        width: 95%;
+    }
+
+    .komentari {
+        width: 31.5%;
+    }
+
+    #navButtons {
+        left: 35%;
+    }
+}

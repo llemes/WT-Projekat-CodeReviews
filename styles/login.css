@@ -1,0 +1,25 @@
+@import "common.css";
+
+h2 {
+    text-transform: uppercase;
+    color: black;
+}
+
+#login {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#registration {
+    display: inline-block;
+}
+
+#content {
+    display: inline-block;
+    margin-left: 37.5%;
+    margin-top: 10%;
+}
+
+#registerFormToggleButton:hover {
+    background-color: #1E5B6E;
+}

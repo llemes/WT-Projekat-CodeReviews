@@ -1,0 +1,30 @@
+@import "common.css";
+
+#inputi {
+    width: 50%;
+    height: 10%;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+#output {
+    margin-top: 2%;
+    margin-left: 10%;
+}
+
+.inputiRow {
+    margin-top: 5%;
+    height: 40px;
+}
+
+#brojSpirale, #brojIndeksa {
+    display: inline-block;
+    width: 40%;
+    float: right;
+}
+
+#buttoni {
+    width: 20%;
+    margin-left: 30%;
+    margin-top: 5%;
+}

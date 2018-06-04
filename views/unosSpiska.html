@@ -1,0 +1,48 @@
+<link rel="stylesheet" type="text/css" href="styles/unosSpiska.css">
+<script type="text/javascript" src="scripts/unosSpiska.js"></script>
+
+<div class="content">
+
+    <!-- ZNAM DA JE INLINE STIL ALI NE RADI ONAJ MOJ CSS -->
+    <!-- tj. uspije uraditi import za common.css ali mimo toga nijedan stil se ne primijeni -->
+    <!-- ne bude prepisan, ne bude nevalidan, jednostavno ga NEMA (iako iz istog fajla uspije import commona) -->
+
+    <form id="unosSpiska"
+          style="width: 60%;top: 50%;">
+
+        <label for="indeksi"
+               style="position:absolute; left: 15%; top:20%;">
+            Brojevi indeksa:
+        </label>
+
+        <textarea id="indeksi"
+                  rows="4"
+                  cols="1"
+                  style="position:absolute; left:30%; top:20%; width: 50%;">
+        </textarea>
+
+        <label for="brojSpirale"
+               style="position:absolute; left: 15%; top:40%">
+            Broj spirale:
+        </label>
+
+        <input id="brojSpirale"
+               type="number"
+               min="1"
+               max="4"
+               style="position:absolute; left:30%; top: 40%; width: 50%;"/>
+
+        <button type="button"
+               onclick="posaljiIndekseNaServer(indeksi.value, brojSpirale.value)"
+                style="position:absolute; left: 30%; top: 50%; width: 15%; height: 5%;">
+            Submit
+        </button>
+
+    </form>
+
+    <div id="feedback"
+        style="position: absolute; left: 30%; top: 60%;">
+
+    </div>
+
+</div>

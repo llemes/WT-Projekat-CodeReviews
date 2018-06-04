@@ -1,0 +1,89 @@
+@import "common.css";
+
+button:not(.buttonIkona) {
+    width: auto;
+}
+
+table:not(#menu) {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+tr:not(.menuRow), td:not(.menuCell), th {
+    border: 1px solid black;
+}
+
+th {
+    background-color: black;
+    color: #f2f2f2;
+}
+
+td:not(.menuCell) {
+    padding-left: 1%;
+}
+
+input[type="text"] {
+    width: 95%;
+}
+
+.buttonIkona {
+    background-color: transparent;
+    color: black;
+    border: none;
+    width: 20%;
+}
+
+#studentiTabela {
+    width: 96%;
+    height: 60%;
+    margin-left: 2%;
+    margin-top: 5%;
+}
+
+#inputi {
+    width: 50%;
+    height: 10%;
+    margin-left: 10%;
+}
+
+.inputiRow {
+    margin-top: 5%;
+    height: 40px;
+}
+
+#kreirajKomentarButton {
+
+    display: inline-block;
+    margin-left: 80%;
+
+}
+
+#brojSpirale, #brojIndeksa {
+    display: inline-block;
+    width: 40%;
+    float: right;
+}
+
+/*
+        SMALL SCREEN
+*/
+
+@media screen and (max-width: 700px) {
+
+    #studentiTabela {
+        top: 30%;
+    }
+
+}
+
+/*
+        BIG SCREEN
+*/
+
+@media screen and (min-width: 700px) {
+
+    #studentiTabela {
+        top: 25%;
+    }
+
+}

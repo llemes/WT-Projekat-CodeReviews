@@ -1,0 +1,29 @@
+<link rel="stylesheet" type="text/css" href="styles/nastavnik.css">
+
+<div id="inputi">
+    <div class="inputiRow">
+        <label for="brojSpirale">Broj spirale:</label>
+        <input type="number" id="brojSpirale" min="1" max="4">
+    </div>
+    <div class="inputiRow">
+        <label for="brojIndeksa">Broj indeksa:</label>
+        <input type="text" id="brojIndeksa">
+    </div>
+</div>
+
+<div id="buttoni">
+    <button type="button" onclick="KreirajFajl.kreirajIzvjestaj(brojSpirale.value, brojIndeksa.value, function(status, poruka) {
+
+        output.innerText = status + ' - ' + poruka;
+
+    })">Generiši izvještaj</button>
+    <button type="button" onclick="KreirajFajl.kreirajBodove(brojSpirale.value, brojIndeksa.value, function(status, poruka) {
+
+        output.innerText = status + ' - ' + poruka;
+
+    })">Generiši bodove</button>
+</div>
+
+<div id="output">
+
+</div>
